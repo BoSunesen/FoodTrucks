@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food trucks</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+<body>
+
+<div class="container-fluid site-container fill-height">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>Food Trucks</h3>
+        </div>
+    </div>
+    <div class="row fill-height">
+        <div class="col-xs-12 fill-height extra-padding">
+            <div id="map" class="fill-height"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="jquery/jquery-1.12.4.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/site.js"></script>
+<script> var mapsCallback = foodtruckmap.mapsCallback; </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZChutJG9xDtFTepVvKaDzDgrYgYlFdU&callback=mapsCallback"></script>
+</body>
+</html>

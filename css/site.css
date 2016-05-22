@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+}
+
+.site-container {
+    overflow: hidden;
+}
+
+.fill-height {
+    height: 100%;
+}
+
+.extra-padding {
+    padding-bottom: 70px;
+}
+

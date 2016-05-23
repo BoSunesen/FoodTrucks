@@ -23,7 +23,7 @@
 
         var header = '<h4>' + foodTruck.Applicant + '</h4>';
         var facilityTypeDetail = '';
-        if (foodTruck.FacilityType != "Truck") {
+        if (foodTruck.FacilityType != '' && foodTruck.FacilityType != 'Truck') {
             facilityTypeDetail = ' (' + foodTruck.FacilityType + ')'
         }
         var details = '<h5>' + foodTruck.Address + facilityTypeDetail + '</h5>' +

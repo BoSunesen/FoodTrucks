@@ -10,32 +10,28 @@
 </head>
 <body>
 
-<div class="container-fluid site-container fill-height">
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="form-group">
-                <label for="distance">Distance (meters)</label>
-                <input type="text" id="distance" size="8"/>
-            </div>
+<div id="site-container" class="fill-height">
+    <div id="input-column">
+        <div class="form-group">
+            <label for="distance">Meters</label><br>
+            <input type="text" id="distance" size="6" value="2000">
         </div>
-        <div class="col-sm-4">
-            <div class="form-group">
-                <label for="weekday">Day of week</label>
-                <select id="weekday"></select>
-            </div>
+        <div class="form-group">
+            <label for="weekday">Day of week</label><br>
+            <select id="weekday">
+                <option value="">Any</option>
+            </select>
         </div>
-        <div class="col-sm-4">
-            <div class="form-group">
-                <label for="hour">Hour of day</label>
-                <select id="hour"></select>
-            </div>
+        <div class="form-group">
+            <label for="hour">Hour of day</label><br>
+            <select id="hour">
+                <option value="">Any</option>
+            </select>
         </div>
     </div>
 
-    <div class="row fill-height">
-        <div class="col-xs-12 fill-height extra-padding">
-            <div id="map" class="fill-height"></div>
-        </div>
+    <div id="map-column" class="fill-height">
+        <div id="map" class="fill-height"></div>
     </div>
 </div>
 

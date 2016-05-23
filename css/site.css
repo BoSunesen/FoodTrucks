@@ -2,15 +2,20 @@ html, body {
     height: 100%;
 }
 
-.site-container {
-    padding-top: 10px;
+#site-container {
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
+#input-column {
+    float: left;
+    width: 105px;
 }
 
 .fill-height {
     height: 100%;
 }
 
-.extra-padding {
-    padding-bottom: 100px;
+label, input, select {
+    min-width: 100px;
 }
-

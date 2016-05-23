@@ -1,0 +1,32 @@
+application: points-of-interest-map
+version: alpha-001
+runtime: go
+api_version: go1
+
+handlers:
+- url: /favicon\.ico$
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /index\.html$
+  static_files: index.html
+  upload: index\.html
+
+- url: /bootstrap
+  static_dir: bootstrap
+
+- url: /css
+  static_dir: css
+
+- url: /jquery
+  static_dir: jquery
+
+- url: /js
+  static_dir: js
+
+- url: /
+  static_files: index.html
+  upload: index\.html
+
+- url: /.*
+  script: _go_app

@@ -96,7 +96,7 @@
             position: center,
             map: map,
             icon: {
-                url: 'http://points-of-interest-1308.appspot.com/favicon.ico'
+                url: 'https://points-of-interest-1308.appspot.com/favicon.ico'
             }
         });
         map.addListener('click', function (e) {

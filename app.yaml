@@ -1,5 +1,5 @@
 application: points-of-interest-map
-version: beta-001
+version: beta-002
 runtime: go
 api_version: go1
 

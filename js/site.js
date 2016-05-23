@@ -92,7 +92,6 @@
             zoom: initialZoom
         });
         foodtruckmap.userPosition = new google.maps.Marker({
-            //TODO draggable?
             position: center,
             map: map,
             icon: {

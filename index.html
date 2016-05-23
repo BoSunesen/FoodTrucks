@@ -12,10 +12,26 @@
 
 <div class="container-fluid site-container fill-height">
     <div class="row">
-        <div class="col-xs-12">
-            <h3>Food Trucks</h3>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="distance">Distance (meters)</label>
+                <input type="text" id="distance" size="8"/>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="weekday">Day of week</label>
+                <select id="weekday"></select>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label for="hour">Hour of day</label>
+                <select id="hour"></select>
+            </div>
         </div>
     </div>
+
     <div class="row fill-height">
         <div class="col-xs-12 fill-height extra-padding">
             <div id="map" class="fill-height"></div>
@@ -23,11 +39,13 @@
     </div>
 </div>
 
-
 <script src="jquery/jquery-1.12.4.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/site.js"></script>
-<script> var mapsCallback = foodtruckmap.mapsCallback; </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZChutJG9xDtFTepVvKaDzDgrYgYlFdU&callback=mapsCallback"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZChutJG9xDtFTepVvKaDzDgrYgYlFdU"></script>
+<script>
+    foodtruckmap.createMap();
+    foodtruckmap.setup();
+</script>
 </body>
 </html>
